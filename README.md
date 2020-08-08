@@ -18,7 +18,7 @@ using columntransformer and pipeline to handle missing data and onehotencode cat
 ## Different Approach
 
 I tried to resample the data using sklearn.utils to make the dataset balanced. I also tried a dimensionality reduction algorithm (PCA).
-This appoach didn't realy help the overall preformance but significantly incread the proformace of some Algorithms (logistic regression - SVC).
+This appoach didn't realy help the overall preformance but significantly increased the proformace of some Algorithms (logistic regression - SVC).
 
 ----
 

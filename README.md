@@ -5,13 +5,13 @@ developing a machine learning model using the training set that performs well on
 
 ## Thoughts on dataset
 
-the training dataset was imbalanced. "variable 14"(which is float but suppose to be integer) and "variable 17" are the same but different datatypes [int64 , float64]. at first i was inclined to drop columns with high "NAN" precentage such as "variable 18" and high cordinality columns such as "variable 6" but keeping them helps the preformance of the model. 
+the training dataset was imbalanced. "variable 14" and "variable 17" are the same and so are "variable 4" and "variable 5".some categorical columns such as "variable 5", "variable 6" and "variable 7" have more categories in the training set than in the validation set. at first i was inclined to drop columns with high "NAN" precentage such as "variable 18" and high cordinality columns such as "variable 6" but keeping them helps the preformance of the model. 
 
 ----
 
 ## Approach
 
-using columntransformer and pipeline to handle missing data and onehotencode categorical columns and i also droped "variable 14"
+using columntransformer and pipeline to handle missing data and onehotencode categorical columns. I droped all the rows with the additional category in "variable 6", "variable 7" and "variable 5". and i also droped columns "variable 17" and "variable 4"
 
 ----
 

@@ -11,7 +11,7 @@ the training dataset had 3210 duplicated rows (all of them class labeled "yes.")
 
 ## Approach
 
-using columntransformer and pipeline to handle missing data and onehotencode categorical columns. I droped all the rows with the additional category in "variable 6", "variable 7" and "variable 5". and i also droped columns "variable 17" and "variable 4"
+using columntransformer and pipeline to handle missing data and onehotencode categorical columns. I droped all the rows with the additional category in "variable 6", "variable 7" and "variable 5". and i also droped columns "variable 17" , "variable 4" and "variable 19". 
 
 ----
 

@@ -17,12 +17,12 @@ using columntransformer and pipeline to handle missing data and onehotencode cat
 
 ## Algorithms Comparison
 
-| model                  	| parameters                                	| accuracy 	| precision(0/1) 	| f1_score(0/1) 	|
-|------------------------	|-------------------------------------------	|----------	|----------------	|---------------	|
-| KNeighborsClassifier   	| Apply PCA(n_components = 11)              	| 0.865    	| (0.87 / 0.86)  	| (0.87 / 0.85) 	|
-| XGBClassifier          	| learning_rate = 0.02,booster = "gblinear" 	| 0.89     	| (0.90 / 0.88)  	| (0.90 / 0.89) 	|
-| RandomForestClassifier 	| n_estimators = 10                         	| 0.88     	| (0.90 / 0.86)  	| (0.89 / 0.87) 	| 
-| SVC                    	| -                                         	| 0.86     	| (0.92 / 0.80)  	| (0.86 / 0.86) 	|
-| LogisticRegression     	| Applying PCA(n_components = 14)           	| 0.875    	| (0.89 / 0.85)  	| (0.88 / 0.87) 	|
-| DecisionTreeClassifier 	| Applying PCA(n_components = 7)            	| 0.81     	| (0.84 / 0.78)  	| (0.82 / 0.80) 	| 
-| LGBMClassifier         	| learning_rate = 0.04                      	| 0.885    	| (0.95 / 0.83)  	| (0.89 / 0.88) 	| 
+| model                  	| parameters                                	| accuracy 	| precision | f1_score 	|
+|------------------------	|-------------------------------------------	|----------	|-------|-------------	|
+| KNeighborsClassifier   	| Apply PCA(n_components = 11)              	| 0.865    	| 0.82 	| 0.85 	|
+| XGBClassifier          	| learning_rate = 0.02,booster = "gblinear" 	| 0.89     	| 0.88 	| 0.88 	|
+| RandomForestClassifier 	| n_estimators = 10                         	| 0.88     	| 0.85  | 0.87 	| 
+| SVC                    	| -                                         	| 0.86     	| 0.80  | 0.86 	|
+| LogisticRegression     	| Applying PCA(n_components = 14)           	| 0.875    	| 0.80  | 0.87	|
+| DecisionTreeClassifier 	| Applying PCA(n_components = 7)            	| 0.81     	| 0.81  | 0.80 	| 
+| LGBMClassifier         	| learning_rate = 0.04                      	| 0.885    	| 0.83  | 0.88 	| 

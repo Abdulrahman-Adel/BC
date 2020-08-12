@@ -25,4 +25,4 @@ using columntransformer and pipeline to handle missing data and onehotencode cat
 | SVC                    	| -                                         	| 0.86     	| 0.80  | 0.86 	|
 | LogisticRegression     	| Applying PCA(n_components = 14)           	| 0.875    	| 0.80  | 0.87	|
 | DecisionTreeClassifier 	| Applying PCA(n_components = 7)            	| 0.81     	| 0.81  | 0.80 	| 
-| LGBMClassifier         	| learning_rate = 0.04                      	| 0.885    	| 0.83  | 0.88 	| 
+| LGBMClassifier         	| learning_rate = 0.04, class_weight={0:2,1:1}                      	| 0.89    	| 0.87  | 0.88 	| 
